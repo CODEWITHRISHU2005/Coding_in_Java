@@ -101,6 +101,5 @@ public class Arrays{
         // for(int element: result){
         //     System.out.print(element + " ");
         // }
-        // Question_7-> Write a program to 
     }
 }
