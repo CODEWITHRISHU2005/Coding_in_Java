@@ -1,4 +1,4 @@
-public class pattern {
+public class Pattern {
     public static void main(String[] args) {
         // Question_1-> Write a program to print the following pattern
         // *****
@@ -317,3 +317,4 @@ public class pattern {
         
     }
 }
+

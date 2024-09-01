@@ -30,3 +30,5 @@ class Employee{
         System.out.println("Employee salary: " + salary);
     }
 }
+
+

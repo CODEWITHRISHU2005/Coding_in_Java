@@ -1,7 +1,4 @@
-
-
-
-public class practice {
+public class Practice {
     public static void main(String[] args) {
         // Question_1-> Write a program to check if a given number is present in an array?
         // Scanner sc =  new Scanner(System.in);
@@ -262,8 +259,8 @@ public class practice {
     //     for(int element: arr)
     //     System.out.print(element+" ");
     // }
-    String str = "123";
-    int number = Integer.parseInt(str, 12);
-    System.out.println(number);
+    // String str = "123";
+    // int number = Integer.parseInt(str, 12);
+    // System.out.println(number);
     }
 }
