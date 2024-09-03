@@ -23,7 +23,6 @@ class Laptop {
         System.out.println(obj.brand + ":" + obj.name + ":" + obj.price);
     }
 }
-
 public class StaticBlocks {
     public static void main(String[] args) throws ClassNotFoundException {
         Class.forName("Laptop");//->This will load a class
