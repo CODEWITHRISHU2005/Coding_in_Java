@@ -1,3 +1,6 @@
+// When we make a class as final we are just stopping the inheritance we cannot create subclass of that.
+// Wen we make variable as final then we can't change the value
+// When we make method as final we are just stopping the method overriding
 public class OOPS {
     public static void main(String[] args) {
         System.out.println("My first custom class:");
