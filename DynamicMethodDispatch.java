@@ -15,7 +15,7 @@ class Phone {
 class SmartPhone extends Phone {
     @Override
     public void call() {
-        super.call();// This suoer command helps to run phone call func otherwise if we don't use this then only Smartphone call func runs
+        super.call();// This super command helps to run phone call func otherwise if we don't use this then only Smartphone call func runs
         System.out.println("Calling...in SmartPhone");
     }
     public void musicPlayer() {
