@@ -1,10 +1,12 @@
+/*
+-> Whenever object is created using new keyword then method will run at run time.
+-> We cannot override static & final methods it produces compile time error.
+-> We cannot override a private method & return type should same for overriden method.
+-> Overloading is about the same method having different signatures.Overriding is about the same method, and same signature but different classes connected through inheritance. 
+-> Method overloading is compile time polymorphism whereas method overriding is runtime polymorphism.
+-> In dynamic method dispatch we can run only reference of obj method.
+*/
 class Phone {
-    // Whenever object is created using new keyword then method will run at run time.
-    // We cannot override static & final methods it produces compile time error.
-    // We cannot override a private method & return type should same for overriden method.
-    // Overloading is about the same method having different signatures.Overriding is about the same method, and same signature but different classes connected through inheritance. 
-    // Method overloading is compile time polymorphism whereas method overriding is runtime polymorphism.
-    // In dynamic method dispatch we can run only reference of obj method.
 
     public void message() {
         System.out.println("Messaging some text!");

@@ -1,3 +1,11 @@
+/*
+-> Methods are abstract by default; Java 8, can have default and static methods.
+-> Multiple inheritance can be achieved through interfaces.
+-> Variables are implicitly public, static, and final (constants).
+-> Those concrete class which implements interfaces methods must be public 
+-> Methods and properties are implicitly public.
+-> Functional Interface means a interface having only one abstract method.
+*/
 interface Bicycle{
     void applyBrake(int decrement);
     void speedUP(int increment);
