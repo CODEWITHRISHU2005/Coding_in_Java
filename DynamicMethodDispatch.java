@@ -1,5 +1,3 @@
-package org.classfiles;
-
 class Phone {
     // Whenever object is created using new keyword then method will run at run time.
     // We cannot override static & final methods it produces compile time error.

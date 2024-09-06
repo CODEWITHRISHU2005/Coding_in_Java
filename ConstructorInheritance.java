@@ -3,7 +3,6 @@
 // Remember even if we don't mention every class in java extends Object class but only superclass at top in case of multiple inheritance.
 // this()_ method will execute constructor of same class.
 // super()_ method will execute constructor of super class.
-package org.classfiles;
 
 class Base {
     Base() {

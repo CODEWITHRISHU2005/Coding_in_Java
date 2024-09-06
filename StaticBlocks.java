@@ -1,3 +1,4 @@
+// First Static then Constructor and then Method will execute
 class Laptop {
     String brand;
     int price;

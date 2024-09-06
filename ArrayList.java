@@ -1,5 +1,3 @@
-package org.classfiles;
-
 import java.util.ArrayList;
 import java.util.Collections;
 

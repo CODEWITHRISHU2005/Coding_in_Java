@@ -1,6 +1,3 @@
-package org.classfiles;
-
-
 public class Test
 {
     static int x = 11;

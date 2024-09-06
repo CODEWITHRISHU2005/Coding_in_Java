@@ -6,8 +6,6 @@
 // Abstract helps to achieve abstraction.
 
 // Abstract class
-package org.classfiles;
-
 abstract class Base {
 	abstract void fun();
 }

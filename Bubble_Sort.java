@@ -1,5 +1,3 @@
-package org.classfiles;
-
 public class Bubble_Sort {
     public static void main(String[] args) {
         // Time Complexity = 0(n^2)
