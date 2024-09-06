@@ -1,9 +1,11 @@
+package org.classfiles;
 // Interface can have abstract method & from java_8 can have default and static method.
 // Those class which implements all methods of interface there implemented methods must be declare as public.
 // Data members are implicitly public, static and final (constants) by default.
 // Variables in interface are static and final by deafault.
 // Object cannot be created for interface.
 // Multiple inheritance can only be achieve through interfaces.
+
 
 interface Bicycle{
     void applyBrake(int decrement);

@@ -1,6 +1,9 @@
+package org.classfiles;
 // class - class-> extends
 // interface - interface-> extends
 // interface - class-> implements
+
+import Laptop;
 
 interface Computer {
     void code();

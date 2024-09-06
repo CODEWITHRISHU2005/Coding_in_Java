@@ -1,3 +1,6 @@
+package org.classfiles;
+
+
 public class VarArgs {
     static int sum(int ...arr){
     int result = 0;

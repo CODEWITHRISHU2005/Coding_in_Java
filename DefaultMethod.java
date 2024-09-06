@@ -49,7 +49,7 @@ class SmartPhone extends CellPhone implements Camera, Wifi {
     }
 }
 
-public class Deafault {
+public class DefaultMethod {
     public static void main(String[] args) {
         SmartPhone ms = new SmartPhone();
         ms.record4KVideo();

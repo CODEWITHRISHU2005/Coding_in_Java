@@ -1,6 +1,3 @@
-// First static block then constructor and then method executed
-// If we don't create obj then static block will not be executed
-// When a class is loaded then static block will get executed but not constructor
 class Laptop {
     String brand;
     int price;
