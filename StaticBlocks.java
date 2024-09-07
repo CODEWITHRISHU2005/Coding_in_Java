@@ -1,4 +1,6 @@
-// First Static then Constructor and then Method will execute
+// First Static then Constructor and then Method will execute.
+// If we don't create obj then static block will not be executed.
+// When a class is loaded then static block will get executed but not constructor.
 class Laptop {
     String brand;
     int price;
