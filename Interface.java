@@ -1,4 +1,8 @@
 /*
+-> @class extends class
+-> @interface extends interface
+-> @class implements interface
+
 -> Methods are abstract by default; Java 8, can have default and static methods.
 -> Multiple inheritance can be achieved through interfaces.
 -> Variables are implicitly public, static, and final (constants).

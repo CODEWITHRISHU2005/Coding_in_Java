@@ -262,5 +262,25 @@ public class Practice {
     // String str = "123";
     // int number = Integer.parseInt(str, 12);
     // System.out.println(number);
+
+    // Question_18-> WAP to print day using switch case.
+    // String day = "Sunday";
+    // switch(day) {
+        // case "Monday" -> System.out.println("Monday");
+        // case "Tuesday" -> System.out.println("Tuesday");      
+        // case "Wednesday" -> System.out.println("Wednesday");      
+        // case "Thursday" -> System.out.println("Thursday");      
+        // case "Friday" -> System.out.println("Friday");
+        // case "Saturday" -> System.out.println("Saturday");
+        // default -> System.out.println("Sunday");
+
+        // case "Monday" : System.out.println("Monday");
+        // case "Tuesday" : System.out.println("Tuesday");      
+        // case "Wednesday" : System.out.println("Wednesday");      
+        // case "Thursday" : System.out.println("Thursday");      
+        // case "Friday" : System.out.println("Friday");
+        // case "Saturday" : System.out.println("Saturday");
+        // default : System.out.println("Sunday");
+        // }
     }
 }

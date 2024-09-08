@@ -1,4 +1,5 @@
-/*-> If we make variable as final then we cannot change the value.
+/*
+-> If we make variable as final then we cannot change the value.
 -> If we make class as final then we are just stopping inheritance no one can inherit my class.
 -> If we make method as final then we are just stopping method overriding no one can override my method.
 */
@@ -39,7 +40,8 @@ class AdvCalc extends Calc {
 }
 public class Final {
     public static void main(String[] args) {
-        // final int num = 9;
+        // final int num = 7;
+        // num = 6;
         // System.out.println(num);
         AdvCalc cal = new AdvCalc();
         System.out.println(cal.add(5, 6));
