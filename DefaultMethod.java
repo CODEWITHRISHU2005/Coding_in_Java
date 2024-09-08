@@ -1,6 +1,6 @@
 /* Default method simply means that we know in interface only abstract method(without method bodies)
 are allowed if we add some more method in interface we have to implement this method in inherited class
-which breaks code functionality in order to rectify java introduce default method concept.
+which breaks code functionality in order to rectify java introduce default method concept means implement inside interface.
 */
 interface Camera {
     private void Dslr() {
