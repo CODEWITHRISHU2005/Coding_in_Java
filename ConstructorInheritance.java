@@ -2,7 +2,7 @@
 // Why?-> Because in Java even if we don't mention every constructor have super() _ method already in every class.
 // Remember even if we don't mention every class in java extends Object class but only superclass at top in case of multiple inheritance.
 // this()_ method will execute constructor of same class.
-// super()_ method will execute constructor of sup
+// super()_ method will execute constructor of superclass that of subclass.
 
 class Base {
     Base() {
@@ -27,6 +27,6 @@ class Derived extends Base {
 public class ConstructorInheritance {
     public static void main(String[] args) {
         //Base c = new Base(12);
-        Derived d = new Derived();
+        Derived d = new Derived(5, 6);
     }
 }

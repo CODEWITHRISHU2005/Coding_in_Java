@@ -1,27 +1,40 @@
+/*
+=> TYPES OF ERRORS :
+-> SYNTAX ERROR OR COMPILE TIME ERROR.
+-> LOGICAL ERROR OR BUG.
+-> RUNTIME ERROR OR EXCEPTION.
+-> There are two types of Exception :
+* Checked Exception or compile time exception Handled by compiler.
+* Unchecked Exception or Runtime Exception.
+*/
+import java.util.Scanner;
 public class ExceptionHandling {
-    @SuppressWarnings("null")
     public static void main(String[] args) {
-    int i = 2;
-    int j = 0;
-    int nums[] = new int[5];
-    String str = null;
-    
-    try {        
-        j=18/i;
-        System.out.println(str.length());
-        System.out.println(nums[1]);
-        System.out.println(nums[5]);
-    }
-    catch(ArithmeticException e) {
-        System.out.println("Cannot divide by zero");
+        int [] marks = new int[3];
+        marks[0] = 7;
+        marks[1] = 56;
+        marks[2] = 6;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the array index");
+        int ind = sc.nextInt();
+
+        System.out.println("Enter the number you want to divide the value with");
+        int number = sc.nextInt();
+        try{
+            System.out.println("The value at array index entered is: " + marks[ind]);
+            System.out.println("The value of array-value/number is: " + marks[ind]/number);
         }
-    catch(ArrayIndexOutOfBoundsException e) {
-        System.out.println("Stay in your limit.");
+        catch (ArithmeticException e){
+            System.out.println("ArithmeticException occured!");
+            System.out.println(e);
         }
-    catch(Exception e) {
-        System.out.println("Something went wrong."+e);
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexOutOfBoundsException occured!");
+            System.out.println(e);
         }
-    System.out.println(j);
-    System.out.println("Bye");
+        catch (Exception e) {
+            System.out.println("Some other exception occurred!");
+            System.out.println(e);
+        }
     }
 }
