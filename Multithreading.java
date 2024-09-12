@@ -3,65 +3,18 @@
 -> Multiple threads run at same time in a code this is known as Multithreading.
 -> A thread is a smallest unit to work with (individual task) They can run parallely.
 -> Multiple threads can share resources.
+-> In thread context switching is fast means threads interact very fast with each other.
+-> Thread is light weight whereas process is heavy weight.
+-> Threads use shared memory area.
+
+=> How to create a thread?
+-> By extending thread class
+-> By implementing Runnable interface
 
 => Thread States:-
--> New State -> When we create thread.   
--> Runnable State -> When shecduler is not seeing and calling the start() method.
--> Running State -> a thread is running with run() method and shecduler already see. 
--> Waiting State -> sleep(),  wait() method.
--> Dead State
+-> New State -> When we create thread not yet started by invoking start() method.   
+-> Runnable State -> When scheduler is not seeing and after calling the start() method.
+-> Running State -> a thread is running with run() method and scheduler selected. 
+-> Waiting State or non-Runnable -> sleep(),  wait() method.
+-> Dead State or terminated state -> no code is left to execute.
 */
-class A extends Thread
-{
-	public void run()
-	{
-		for(int i=1;i<=100;i++)
-		{
-			System.out.println("Hi");
-			try {
-				Thread.sleep(10);
-			}catch(InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-	}
-}
-
-class B extends Thread
-{
-	public void run()
-	{
-		for(int i=1;i<=100;i++)
-		{
-			System.out.println("Hello");
-			try {
-				Thread.sleep(10);
-			}catch(InterruptedException e) {
-				e.printStackTrace();
-			}
-		}
-	}
-}
-
-public class Multithreading {
-    public static void main(String[] args) throws NumberFormatException {   
-        A obj1=new A();
-        B obj2=new B();
-
-//    	obj1.show();
-//    	obj2.show();
-        
-        obj2.setPriority(Thread.MAX_PRIORITY);
-        System.out.println(obj1.getPriority());
-    
-        obj1.start();
-        try {
-			Thread.sleep(2);
-		}
-        catch(InterruptedException e) {
-			e.printStackTrace();
-		}
-        obj2.start();
-    }
-    
-}
