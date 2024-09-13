@@ -1,3 +1,5 @@
+package com.DSA;
+
 public class Selection_Sort {
     public static void main(String[] args) {
     // Time Complexity_0(n^2)

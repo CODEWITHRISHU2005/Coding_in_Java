@@ -1,3 +1,5 @@
+package com.DSA;
+
 public class Insertion_Sort {
     public static void main(String args[]) {
         //Time Complexity:0(n^2)
