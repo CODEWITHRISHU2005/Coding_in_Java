@@ -25,10 +25,10 @@ public class Throw_Throws {
     }
     public static void main(String[] args) {
         try{
-            // int c = divide(6, 0);
-            // System.out.println(c);
-            double area = areaCircle(-4);
-            System.out.println(area);
+            int c = divide(6, 0);
+            System.out.println(c);
+            // double area = areaCircle(-4);
+            // System.out.println(area);
         }
         catch(Exception e) {
             System.out.println("Exception: "+e);
