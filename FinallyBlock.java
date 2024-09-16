@@ -1,3 +1,5 @@
+// Finally Block is used to close the resource using Buffered Reader.
+// Finally Block mai jo code likha hoga wo har hal mai execute hokar managa exception aye chaha nhi.
 public class FinallyBlock {
     public static int greet() {
         try{
