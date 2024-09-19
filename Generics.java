@@ -8,10 +8,11 @@
 -> Bugs can be detected at compile-time:
 -> While developing any application or program, it is always better to catch the bug/problem at the compile-time instead of  runtime so that we can provide a smooth experience to the user.
 */
+
 import java.util.ArrayList;
 import java.util.List;
 
-class Generic<T1, T2>{
+class Generic<T1, T2> {
     int val;
     private T1 t1;
     private T2 t2;
@@ -19,7 +20,7 @@ class Generic<T1, T2>{
     public Generic(int val, T1 t1, T2 t2) {
         this.val = val;
         this.t1 = t1;
-        this.t2= t2;
+        this.t2 = t2;
     }
 
     public int getVal() {
@@ -37,6 +38,7 @@ class Generic<T1, T2>{
     public void setT1(T1 t1) {
         this.t1 = t1;
     }
+
     public T2 getT2() {
         return t2;
     }
@@ -45,6 +47,7 @@ class Generic<T1, T2>{
         this.t2 = t2;
     }
 }
+
 public class Generics {
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {

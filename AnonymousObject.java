@@ -4,6 +4,7 @@ class A {
     public A() {
         System.out.println("Object Created");
     }
+
     public void show() {
         System.out.println("A show");
     }

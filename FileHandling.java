@@ -30,7 +30,7 @@ public class FileHandling {
         File myFile = new File("cwh111file.txt");
         try {
             Scanner sc = new Scanner(myFile);
-            while(sc.hasNextLine()){
+            while (sc.hasNextLine()) {
                 String line = sc.nextLine();
                 System.out.println(line);
             }
@@ -38,13 +38,12 @@ public class FileHandling {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        
+
         // Deleting a file:-
         File myFile = new File("cwh111file.txt");
-        if(myFile.delete()){
+        if (myFile.delete()) {
             System.out.println("I have deleted: " + myFile.getName());
-        }
-        else{
+        } else {
             System.out.println("Some problem occurred while deleting the file");
         }
 

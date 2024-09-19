@@ -15,10 +15,10 @@
 -> If t is a Thread object whose thread is currently executing, then t.join() causes the current thread to pause execution until t's thread terminates.
 -> Join() method puts the current thread on wait until the thread on which it is called is dead.
 */
-class Thr1 extends Thread{
-    public void run(){
+class Thr1 extends Thread {
+    public void run() {
         int i = 0;
-        while(true){
+        while (true) {
 //            System.out.println("I am a thread");
             System.out.println("Thank you: ");
             try {
@@ -31,10 +31,10 @@ class Thr1 extends Thread{
     }
 }
 
-class Thr2 extends Thread{
+class Thr2 extends Thread {
 
-    public void run(){
-        while(true){
+    public void run() {
+        while (true) {
 //            System.out.println("I am a thread");
             System.out.println("My Thank you: ");
         }
@@ -42,7 +42,7 @@ class Thr2 extends Thread{
 }
 
 public class ThreadMethod {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Thr1 t1 = new Thr1();
         Thr2 t2 = new Thr2();
         t1.start();

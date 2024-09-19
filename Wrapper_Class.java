@@ -4,13 +4,13 @@
 -> double -> Double
 */
 public class Wrapper_Class {
-    public static void main(String[] args){   
-        int num=7;
+    public static void main(String[] args) {
+        int num = 7;
 //   	Integer num1 = new Integer(8);
 //    	Integer num1 = 8;
 
 //    	Integer num1=new Integer(num); //boxing
-    	Integer num1 = num; // autoboxing
+        Integer num1 = num; // autoboxing
         int num2 = num1.intValue();// unboxing
 
 //    	System.out.println(num1);
@@ -19,6 +19,6 @@ public class Wrapper_Class {
         String str = "12";
         int num3 = Integer.parseInt(str);
 
-        System.out.println(num3+2);
+        System.out.println(num3 + 2);
     }
 }

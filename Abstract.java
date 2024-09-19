@@ -8,20 +8,19 @@
 */
 // Abstract class
 abstract class Base {
-	abstract void fun();
+    abstract void fun();
 }
+
 class Derived extends Base {
-	void fun()
-	{
-		System.out.println("Derived fun() called");
-	}
+    void fun() {
+        System.out.println("Derived fun() called");
+    }
 }
 
 public class Abstract {
-	public static void main(String args[])
-	{
-		// We can have references of Base type.
-		Base b = new Derived();
-		b.fun();
-	}
+    public static void main(String args[]) {
+        // We can have references of Base type.
+        Base b = new Derived();
+        b.fun();
+    }
 }

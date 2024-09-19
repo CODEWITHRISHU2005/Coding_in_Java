@@ -1,6 +1,7 @@
 enum Status {
     Running, Failed, Pending, Success;
 }
+
 public class Enum {
     public static void main(String[] args) {
         Status s = Status.Running;
@@ -9,22 +10,22 @@ public class Enum {
         //     System.out.println(s + " : " + s.ordinal());
         //     }
 
-        switch(s) {
+        switch (s) {
             case Running:
-            System.out.println("All Good");
-            break;
+                System.out.println("All Good");
+                break;
 
             case Failed:
-            System.out.println("Try Again");
-            break;
+                System.out.println("Try Again");
+                break;
 
             case Pending:
-            System.out.println("All Please Wait");
-            break;
+                System.out.println("All Please Wait");
+                break;
 
             default:
-            System.out.println("Done");
-            break;
-            }
+                System.out.println("Done");
+                break;
         }
+    }
 }

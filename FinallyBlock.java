@@ -2,16 +2,14 @@
 // Finally Block mai jo code likha hoga wo har hal mai execute hokar managa exception aye chaha nhi.
 public class FinallyBlock {
     public static int greet() {
-        try{
+        try {
             int a = 50;
             int b = 10;
-            int c = a/b;
+            int c = a / b;
             return c;
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e);
-        }
-        finally {
+        } finally {
             System.out.println("Cleaning up resources...This is the end of this function");
         }
         return -1;
@@ -22,24 +20,21 @@ public class FinallyBlock {
         System.out.println(k);
         int a = 7;
         int b = 9;
-        while(true){
-            try{
-                System.out.println(a/b);
-            }
-            catch (Exception e){
+        while (true) {
+            try {
+                System.out.println(a / b);
+            } catch (Exception e) {
                 System.out.println(e);
                 break;
-            }
-            finally{
+            } finally {
                 System.out.println("I am finally for value of b = " + b);
             }
             b--;
         }
 
-        try{
-            System.out.println(50/3);
-        }
-        finally {
+        try {
+            System.out.println(50 / 3);
+        } finally {
             System.out.println("Yes this is finally");
         }
     }

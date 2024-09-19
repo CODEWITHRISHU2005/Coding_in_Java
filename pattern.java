@@ -123,7 +123,7 @@ public class Pattern {
         //     }
         //     System.out.println();
         // }
-        
+
         // Question_10-> Write a program to print the following pattern
         // 1
         // 0 1
@@ -199,7 +199,7 @@ public class Pattern {
         //     }
         //     System.out.println();
         // }
-        
+
         // Question_13-> Write a program to print the following pattern
         //     1
         //    2 2
@@ -218,7 +218,7 @@ public class Pattern {
         //     }
         //     System.out.println();
         // }
-        
+
         // Question_14-> Write a program to print the following pattern
         //     1
         //    2 1 2
@@ -241,7 +241,7 @@ public class Pattern {
         //     }
         //     System.out.println();
         // }
-        
+
         // Question_15-> Write a program to print the following pattern
         // Diamond pattern
         //     *
@@ -279,7 +279,7 @@ public class Pattern {
         //     }
         //     System.out.println();
         // }
-        
+
         // Question_16-> Write a program to print the following pattern
         // *****
         //  ***

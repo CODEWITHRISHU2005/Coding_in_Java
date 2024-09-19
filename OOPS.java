@@ -16,15 +16,17 @@ public class OOPS {
         john.salary = 20;
 
         // Calling method to print details
-        rishu.printDetails(); 
-        john.printDetails(); 
+        rishu.printDetails();
+        john.printDetails();
     }
 }
-class Employee{
+
+class Employee {
     int id;
     int salary;
     String name;
-    public void printDetails(){
+
+    public void printDetails() {
         System.out.println("Employee ID: " + id);
         System.out.println("Employee name: " + name);
         System.out.println("Employee salary: " + salary);
