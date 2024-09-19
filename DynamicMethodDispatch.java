@@ -11,6 +11,7 @@ class Phone {
     public void message() {
         System.out.println("Messaging some text!");
     }
+
     public void call() {
         System.out.println("Calling... in cellular phone");
     }
@@ -22,15 +23,18 @@ class SmartPhone extends Phone {
         super.call();// This super command helps to run phone call func otherwise if we don't use this then only Smartphone call func runs
         System.out.println("Calling...in SmartPhone");
     }
+
     public void musicPlayer() {
         System.out.println("Playing music...");
     }
 }
+
 public class DynamicMethodDispatch {
     public static void main(String[] args) {
         Phone obj = new SmartPhone();//->This is dynamic method dispatch or run time polymorphism
-        obj.call();       
+        obj.call();
         obj.message();
         //obj.musicPlayer();->This will produce an error because we can run only superclass data members
+
     }
 }

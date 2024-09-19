@@ -1,21 +1,23 @@
-class MyThreadRunnable1 implements Runnable{
+class MyThreadRunnable1 implements Runnable {
     public void run() {
         int i = 0;
-        while(i<100) {
-        System.out.println("I am a thread 1 not a threat 1");
-        i++;
+        while (i < 100) {
+            System.out.println("I am a thread 1 not a threat 1");
+            i++;
         }
     }
 }
-class MyThreadRunnable2 implements Runnable{
-    public void run(){
+
+class MyThreadRunnable2 implements Runnable {
+    public void run() {
         int i = 0;
-        while(i<100) {
-        System.out.println("I am a thread 2 not a threat 2");
-        i++;
+        while (i < 100) {
+            System.out.println("I am a thread 2 not a threat 2");
+            i++;
         }
     }
 }
+
 public class ByRunnableInterface {
     public static void main(String[] args) {
         MyThreadRunnable1 bullet1 = new MyThreadRunnable1();

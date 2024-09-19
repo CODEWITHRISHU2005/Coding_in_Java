@@ -1,61 +1,42 @@
 public class Merge_Sort {
-    private static void mergeSort(int []arr, int l, int r) {
-        if(l<r) {
-            int mid = (l+r)/2;
-            mergeSort(arr, l, mid);
-            mergeSort(arr, mid+1, r);
-            merge(arr, l, mid, r);
-        }
-    }
-    private static void merge(int []arr, int l, int mid, int r) {
-        int size1 = mid-l+1;
-        int size2 = r-mid;
-        int larr[] = new int [size1];
-        int rarr[] = new int [size2];
-        for(int x=0; x<size1; x++) {
-            larr[x] = arr[l+x];
-        }
-        for(int y=0; y<size2; y++) {
-            larr[y] = arr[mid+1+y];
-        }
-        int i = 0;
-        int j = 0;
-        int k = l;
-        while(i<size1 && j<size2) {
-            if(larr[i]<=rarr[j]) {
-                arr[k] = larr[i];
-                i++;
+    public static void conquer(int arr[], int si, int mid, int ei) {
+        int merged[] = new int[ei-si+1];
+
+        int idx1 = si;
+        int idx2 = mid+1;
+        int x = 0;
+        while(idx1 <= mid && idx2 <=ei) {
+            if(arr[idx1] <= arr[idx2]) {
+                merged[x++] = arr[idx1++];
             }
             else{
-                arr[k] = rarr[j];
-                j++;
+                merged[x++] = arr[idx2++];
             }
-            k++;
         }
-        while(i<size1) {
-            arr[k] = larr[i];
-            i++;
-            k++;
+        while(idx1 <= mid) {
+            merged[x++] = arr[idx1++];
         }
-        while(j<size2) {
-            arr[k] = larr[j];
-            j++;
-            k++;
+        while(idx2 <= ei) {
+            merged[x++] = arr[idx2++];
+        }
+        for(int i=0, j=si; i<merged.length; i++,j++) {
+            arr[j] = merged[i];
         }
     }
+    public static void divide(int arr[], int si, int ei) {
+        if(si>=ei) {
+            return;
+        }
+            int mid = si + (ei-si)/2;
+            divide(arr, si, mid);
+            divide(arr, mid+1, ei);
+            conquer(arr, si, mid, ei);
+    }
     public static void main(String[] args) {
-        int arr[] = {3, 5, 1, 4, 6, 2};
-        System.out.println("Before Sorting...");
-        for(int element : arr) {
-        System.out.print(element + " ");
-        }
-        System.out.println();
-
-        mergeSort(arr, 0, arr.length-1);
-
-        System.out.println("After Sorting...");
-        for(int element : arr) {
-            System.out.print(element + " ");
-        }
+        int arr[] = {6, 3, 9, 5, 2, 8};
+        int size = arr.length;
+        divide(arr, 0, size-1);
+        for(int el : arr) 
+        System.out.print(el+ " ");
     }
 }

@@ -26,7 +26,7 @@ public class Practice {
         //     sum = sum + element;
         // }
         // System.out.println(sum / phy.length);
-        
+
         // Question_3-> Write a program to add two matrix of size-> 2*3      
         // int firstMatrix[][] = {{1, 2, 3}, {4, 5, 6}};
         // int secondMatrix[][] = {{7, 8, 9}, {10, 11, 12}};
@@ -43,7 +43,7 @@ public class Practice {
         //     }
         //     System.out.println();
         // }
-        
+
         // Question_4-> Write a program to reverse an array 
         // int arr[] = {0,1,2,3,4,5,6,7,8};
         // int n = arr.length;
@@ -60,7 +60,7 @@ public class Practice {
         // for(int element:arr){
         //     System.out.print(element + " ");
         // }
-        
+
         // Question_5-> Write a program to find out maximum element in an array
         // int arr[] = {10, 20, 30, 40, 50};
         // int max = arr[0];
@@ -70,7 +70,7 @@ public class Practice {
         //     }
         // }
         // System.out.println("Maximum element in array is: " + max);
-        
+
         // Question_6-> Write a program to check whether the array is sorted or not
         // boolean isSorted = false;
         // int arr[] = {70, 20, 30, 40, 50};
@@ -85,7 +85,7 @@ public class Practice {
         // } else {
         //     System.out.println("Array is sorted");
         // }
-        
+
         // Question_7-> Write a program to find out the max and min elements and return in an array that stores only the max and min elements
         // int arr[] = {10, 20, 30, 40, 50};
         // int min = arr[0];
@@ -129,7 +129,7 @@ public class Practice {
         //     sum += Math.pow(i, i);
         //     }
         //     System.out.println("The sum of given series: " + sum);
-        
+
         // Question_10-> Write a program to print the sum of below given series
         // s = 1 + 2/2! + 3/3! +......+n/n!
         // Scanner sc = new Scanner(System.in);
@@ -215,57 +215,57 @@ public class Practice {
         // }
         // System.out.println("Sum of prime numbers up to " + N + ": " + sum);
         // }
-    //     public static boolean isPrime(int num) {
-    //         if(num <= 1) return false;
-    //         for(int i=2; i<=Math.sqrt(num); i++){
-    //             if(num % i == 0) return false;
-    //         }
-    //         return true;
-    // } 
-    // Question_15-> Write a program to print the sum of below given series
-    // s = 1 + (1 + 2) + (1 + 2 + 3) +.........+ (1 + 2 + 3 +.....+N)
-    // Scanner sc = new Scanner(System.in);
-    // int N = sc.nextInt();
-    // int totalSum = 0;
-    // for(int i=1; i<=N; i++){
-    //     int sum = 0;
-    //     for(int j=1; j<=i; j++){
-    //         sum += j;
-    //         }
-    //         totalSum += sum;
-    //     }
-    //     System.out.println("The sum of given series: " + totalSum);
+        //     public static boolean isPrime(int num) {
+        //         if(num <= 1) return false;
+        //         for(int i=2; i<=Math.sqrt(num); i++){
+        //             if(num % i == 0) return false;
+        //         }
+        //         return true;
+        // }
+        // Question_15-> Write a program to print the sum of below given series
+        // s = 1 + (1 + 2) + (1 + 2 + 3) +.........+ (1 + 2 + 3 +.....+N)
+        // Scanner sc = new Scanner(System.in);
+        // int N = sc.nextInt();
+        // int totalSum = 0;
+        // for(int i=1; i<=N; i++){
+        //     int sum = 0;
+        //     for(int j=1; j<=i; j++){
+        //         sum += j;
+        //         }
+        //         totalSum += sum;
+        //     }
+        //     System.out.println("The sum of given series: " + totalSum);
 
-    // Question_16-> Write a program to print the sum of below given series
-    // s = 1 + (1.2) + (1.2.3) +........+ (1.2.3.4......N)
-    // Scanner sc = new Scanner(System.in);
-    // int N = sc.nextInt();
-    // int sum = 0;
-    // for(int i=1; i<=N; i++){
-    //     int product = 1;
-    //     for(int j=1; j<=i; j++){
-    //         product *= j;
-    //         }
-    //         sum += product;
-    //     }
-    //     System.out.println("The sum of given series: " + sum);
+        // Question_16-> Write a program to print the sum of below given series
+        // s = 1 + (1.2) + (1.2.3) +........+ (1.2.3.4......N)
+        // Scanner sc = new Scanner(System.in);
+        // int N = sc.nextInt();
+        // int sum = 0;
+        // for(int i=1; i<=N; i++){
+        //     int product = 1;
+        //     for(int j=1; j<=i; j++){
+        //         product *= j;
+        //         }
+        //         sum += product;
+        //     }
+        //     System.out.println("The sum of given series: " + sum);
 
-    // Question_17-> Write a program to move all negative number to starting of series and positive to the end?
-    // Input: -12, 11, -13, -5, 6, -7, 5, -3, -6
-    // Output: -12 -13 -5 -7 -3 -6 11 6 5
+        // Question_17-> Write a program to move all negative number to starting of series and positive to the end?
+        // Input: -12, 11, -13, -5, 6, -7, 5, -3, -6
+        // Output: -12 -13 -5 -7 -3 -6 11 6 5
 
-    // int arr[] = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
-    // Arrays.sort(arr);
-    //     for(int element: arr)
-    //     System.out.print(element+" ");
-    // }
-    // String str = "123";
-    // int number = Integer.parseInt(str, 12);
-    // System.out.println(number);
+        // int arr[] = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
+        // Arrays.sort(arr);
+        //     for(int element: arr)
+        //     System.out.print(element+" ");
+        // }
+        // String str = "123";
+        // int number = Integer.parseInt(str, 12);
+        // System.out.println(number);
 
-    // Question_18-> WAP to print day using switch case.
-    // String day = "Sunday";
-    // switch(day) {
+        // Question_18-> WAP to print day using switch case.
+        // String day = "Sunday";
+        // switch(day) {
         // case "Monday" -> System.out.println("Monday");
         // case "Tuesday" -> System.out.println("Tuesday");      
         // case "Wednesday" -> System.out.println("Wednesday");      
