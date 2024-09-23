@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Practice {
     public static void main(String[] args) {
         // Question_1-> Write a program to check if a given number is present in an array?
@@ -104,21 +106,21 @@ public class Practice {
         // }
 
         // Question_8-> Write a program to print the sum of first n factorial
-        // s = 1!+2!+3!+4!+5!+6!+......+n!
-        // Scanner sc = new Scanner(System.in);
-        // int n = sc.nextByte();
-        // int sum = 0;
-        // for(int i=1; i<=n; i++){
-        //     sum += factorial(i);
-        //     }
-        //     System.out.println("The sum of first " + n + " factorials: " + sum);
-        // }
-        // public static int factorial(int num) {
-        //     int product = 1;
-        //     for (int i=1; i<=num; i++) {
-        //         product *= i;
-        //     }
-        //     return product;
+//         s = 1!+2!+3!+4!+5!+6!+......+n!
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextByte();
+//         int sum = 0;
+//         for(int i=1; i<=n; i++){
+//             sum += factorial(i);
+//             }
+//             System.out.println("The sum of first " + n + " factorials: " + sum);
+//         }
+//         public static int factorial(int num) {
+//             int product = 1;
+//             for (int i=1; i<=num; i++) {
+//                 product *= i;
+//             }
+//             return product;
 
         // Question_9-> Write a program to print the sum of below given series
         // s = 1^1 + 2^2 +3^3 +........+n^n 
@@ -282,5 +284,35 @@ public class Practice {
         // case "Saturday" : System.out.println("Saturday");
         // default : System.out.println("Sunday");
         // }
+
+        // Question_19-> WAP to calculate area of triangle using herones formula ?
+//        System.out.println("Enter all thre  sides:");
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int b = sc.nextInt();
+//        int c = sc.nextInt();
+//        float s = (a + b + c) / 2.0f;
+//
+//        if ((a + b) > c && (b + c) > a && (c + a) > b) {
+//            float area = (float) Math.sqrt(s * (s - a) * (s - b) * (s - c));
+//            System.out.println("The area of triangle is:" + area);
+//        } else
+//            System.out.println("Triangle is not possible you  cannot calculate area:");
+
+        //Question_20-> WAP to check whethera given number is even or odd using bitwise operator?
+//        System.out.println("Enter a number:");
+//        Scanner sc = new Scanner(System.in);
+//        int num = sc.nextInt();
+//        if ((num ^ 1) == (num + 1))
+//            System.out.println("Entered number is even: ");
+//        else System.out.println("Entered number is odd: ");
+
+        //Question_21-> WAP to swap two num using bitwise operator?
+//        int a = 2;
+//        int b = 5;
+//        a = a ^ b;
+//        b = a ^ b;
+//        a = a ^ b;
+//        System.out.printf("%d %d", a, b);
     }
 }

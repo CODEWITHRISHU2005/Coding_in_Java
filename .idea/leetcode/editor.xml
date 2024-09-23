@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[1089]Duplicate Zeros.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/doc/content/[1089]Duplicate Zeros.md" />
+              <option name="frontendQuestionId" value="leetcode.com1089" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[1089]Duplicate Zeros.java" />
+              <option name="titleSlug" value="duplicate-zeros" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[169]Majority Element.java">
           <value>
             <LeetcodeEditor>
@@ -124,6 +135,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[812]Largest Triangle Area.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/doc/content/[812]Largest Triangle Area.md" />
+              <option name="frontendQuestionId" value="leetcode.com812" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[812]Largest Triangle Area.java" />
+              <option name="titleSlug" value="largest-triangle-area" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[88]Merge Sorted Array.java">
           <value>
             <LeetcodeEditor>
@@ -132,6 +154,17 @@
               <option name="host" value="leetcode.com" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[88]Merge Sorted Array.java" />
               <option name="titleSlug" value="merge-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[989]Add to Array-Form of Integer.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/doc/content/[989]Add to Array-Form of Integer.md" />
+              <option name="frontendQuestionId" value="leetcode.com989" />
+              <option name="host" value="leetcode.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[989]Add to Array-Form of Integer.java" />
+              <option name="titleSlug" value="add-to-array-form-of-integer" />
             </LeetcodeEditor>
           </value>
         </entry>
