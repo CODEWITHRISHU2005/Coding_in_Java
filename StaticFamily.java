@@ -1,11 +1,12 @@
+/*
+-> If we make a variable static then all object is referring to that variable showing below code.
+-> We can use static variables inside a static methods but we can't use non static variables inside a static methods?
+-> Because har ek instance variable ke liye alag obj banta hai to unko pata hai kha refer karna hai but static variable call with the help of class reference to usko pta nhi konsa obj ko refer kre is liye.
+-> Static method need not to create obj they can directly called by using class reference but non-static method needs to create obj.
+*/
+
 class Mobile {
     static String name;
-    /*
-    -> If we make a variable static then all object is referring to that variable showing below code.
-    -> We can use static variables inside a static methods but we can't use non static variables inside a static methods?
-    -> Because har ek instance variable ke liye alag obj banta hai to unko pata hai kha refer karna hai but static variable call with the help of class reference to usko pta nhi konsa obj ko refer kre is liye.
-    -> Static method need not to create obj they can directly called by using class reference but non-static method needs to create obj.
-    */
     String brand;
     int price;
 
