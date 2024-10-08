@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Practice {
     public static void main(String[] args) {
         // Question_1-> Write a program to check if a given number is present in an array?
@@ -106,20 +106,20 @@ public class Practice {
 
         // Question_8-> Write a program to print the sum of first n factorial
 //         s = 1!+2!+3!+4!+5!+6!+......+n!
-//         Scanner sc = new Scanner(System.in);
-//         int n = sc.nextByte();
-//         int sum = 0;
-//         for(int i=1; i<=n; i++){
-//             sum += factorial(i);
-//             }
-//             System.out.println("The sum of first " + n + " factorials: " + sum);
-//         }
-//         public static int factorial(int num) {
-//             int product = 1;
-//             for (int i=1; i<=num; i++) {
-//                 product *= i;
-//             }
-//             return product;
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextByte();
+        int sum = 0;
+        for(int i=1; i<=n; i++){
+            sum += factorial(i);
+            }
+            System.out.println("The sum of first " + n + " factorials: " + sum);
+        }
+        public static int factorial(int num) {
+            int product = 1;
+            for (int i=1; i<=num; i++) {
+                product *= i;
+            }
+            return product;
 
         // Question_9-> Write a program to print the sum of below given series
         // s = 1^1 + 2^2 +3^3 +........+n^n 

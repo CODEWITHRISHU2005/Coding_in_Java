@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Pattern {
     public static void main(String[] args) {
         // Question_1-> Write a program to print the following pattern
@@ -312,5 +313,41 @@ public class Pattern {
 //             }
 //             System.out.println();
 //         }
+        // Question_17-> Write a program to print the following pattern
+/*           *
+          *     *
+        *         *
+      *             *
+    *   *    *    *   *
+*/
+        /*int i, j;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number of rows : ");
+        int rows = sc.nextInt();
+        for(i=1; i<rows; i++)
+        {
+            for(j=i; j<rows; j++)
+            {
+                System.out.print(" ");
+            }
+            for(j=1; j<=(2*i-1); j++)
+            {
+
+                if( j==1 || j==(2*i-1))
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        for(j=1;j<=rows;j++)
+        {
+            System.out.print("* ");
+        }
+        System.out.println();*/
     }
 }

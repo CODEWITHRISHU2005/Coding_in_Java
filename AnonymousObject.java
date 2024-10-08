@@ -13,7 +13,7 @@ class A {
 
 public class AnonymousObject {
     public static void main(String[] args) {
-        new A().show(); //-> Anonymous Object 
+        new A().show(); //-> Anonymous Object
         new A().show();
     }
 }

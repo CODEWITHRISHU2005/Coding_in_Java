@@ -35,6 +35,5 @@ public class DynamicMethodDispatch {
         obj.call();
         obj.message();
         //obj.musicPlayer();->This will produce an error because we can run only superclass data members
-
     }
 }
