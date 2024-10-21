@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Pattern {
     public static void main(String[] args) {
         // Question_1-> Write a program to print the following pattern
@@ -314,12 +315,12 @@ public class Pattern {
 //             System.out.println();
 //         }
         // Question_17-> Write a program to print the following pattern
-/*           *
-          *     *
-        *         *
-      *             *
-    *   *    *    *   *
-*/
+        /*           *
+         *     *
+         *         *
+         *             *
+         *   *    *    *   *
+         */
         /*int i, j;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of rows : ");
