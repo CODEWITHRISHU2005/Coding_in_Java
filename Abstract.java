@@ -1,4 +1,4 @@
-/* 
+/*
 -> There can be a final method in abstract class but any abstract method in class(abstract class) can not be declared as final.
 -> We can define static methods in an abstract class and called using name of abstract class.
 -> Abstract class have both abstract & non-abstract method(with method bodies) contain constructor also.
