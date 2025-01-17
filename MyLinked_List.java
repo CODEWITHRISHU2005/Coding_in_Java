@@ -1,4 +1,4 @@
-class LL {
+class MyLinked_List {
 
     Node head;
     private int size;
@@ -168,7 +168,7 @@ class LL {
     }
 
     public static void main(String[] args) {
-        LL list = new LL();
+        MyLinked_List list = new MyLinked_List();
         list.addFirst(2);
         list.addFirst(1);
         list.addLast(3);
