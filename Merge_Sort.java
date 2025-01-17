@@ -1,7 +1,12 @@
+/*
+=> Time Complexity :-
+-> Best Case_0(nlogn)
+-> Worst Case_0(nlogn)
+-> Avg Case_0(nlogn)
+*/
 public class Merge_Sort {
     public static void conquer(int arr[], int si, int mid, int ei) {
         int merged[] = new int[ei - si + 1];
-
         int idx1 = si;
         int idx2 = mid + 1;
         int x = 0;

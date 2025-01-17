@@ -1,5 +1,6 @@
 /*
 => Time Complexity :-
+-> Best Case_0(nlogn)
 -> Worst Case_0(n^2)
 -> Avg Case_0(nlogn)
 => Worst Case occurs when pivot is always smallest or largest element.
