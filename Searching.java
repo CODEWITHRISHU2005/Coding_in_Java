@@ -12,6 +12,7 @@ public class Searching {
     }
 
     public static int linearSearch(int[] nums, int target) {
+        //TS -> 0(N)
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] == target)
                 return i;
@@ -20,6 +21,7 @@ public class Searching {
     }
 
     public static int binarySearch(int[] nums, int target, int left, int right) {
+        //TS => 0(logn) and SC => 0(1)
         //int left = 0;
         //int right = nums.length - 1;
         if (left < right) {
