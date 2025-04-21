@@ -1,3 +1,5 @@
+package com.DSA;
+
 public class Arrays {
     public static void main(String[] args) {
         // Question_1-> Write a program to check if a given number is present in an array?

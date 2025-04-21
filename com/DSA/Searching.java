@@ -1,3 +1,5 @@
+package com.DSA;
+
 //Time Complexity for Binary Search -> 0(log n).
 //Time Complexity for Linear Search -> 0(n).
 public class Searching {

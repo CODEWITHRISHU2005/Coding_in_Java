@@ -1,3 +1,5 @@
+package com.DSA;
+
 public class MyStack {
     protected int arr[];
     protected int top;

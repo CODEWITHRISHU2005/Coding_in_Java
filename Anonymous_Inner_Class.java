@@ -1,4 +1,4 @@
-a/**
+/**
  * The code defines an abstract class A with abstract methods show() and config(), and demonstrates
  * the use of an anonymous inner class to implement these methods and create an object of type A.
  */
@@ -34,6 +34,5 @@ public class Anonymous_Inner_Class {
         };
         obj.show();
         obj.config();
-
     }
 }

@@ -1,3 +1,5 @@
+package com.DSA;
+
 public class MyQueue {
     private int front = 0;
     private int rear = -1;

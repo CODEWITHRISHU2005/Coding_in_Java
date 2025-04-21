@@ -1,3 +1,5 @@
+package com.DSA;
+
 class MyLinked_List {
 
     Node head;
