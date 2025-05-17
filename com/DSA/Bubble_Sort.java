@@ -1,13 +1,14 @@
-package com.DSA;
 
 public class Bubble_Sort {
+
     public static void main(String[] args) {
         // Time Complexity = 0(n^2):
         int arr[] = {7, 8, 3, 1, 2};
         int size = arr.length;
         System.out.println("Before Sorting...");
-        for (int element : arr)
+        for (int element : arr) {
             System.out.print(element + " ");
+        }
         System.out.println();
 
         // Bubble_Sort:
@@ -21,12 +22,14 @@ public class Bubble_Sort {
                     arr[j + 1] = temp;
                 }
             }
-            for (int element : arr)
+            for (int element : arr) {
                 System.out.print(element + " ");
+            }
             System.out.println();
         }
         System.out.println("After Sorting...");
-        for (int element : arr)
+        for (int element : arr) {
             System.out.print(element + " ");
+        }
     }
 }

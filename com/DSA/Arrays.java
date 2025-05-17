@@ -1,6 +1,6 @@
-package com.DSA;
 
 public class Arrays {
+
     public static void main(String[] args) {
         // Question_1-> Write a program to check if a given number is present in an array?
         // Scanner sc =  new Scanner(System.in);
@@ -27,12 +27,10 @@ public class Arrays {
         //     sum = sum + element;
         // }
         // System.out.println(sum / phy.length);
-
         // Question_3-> Write a program to add two matrix of size-> 2*3      
         // int firstMatrix[][] = {{1, 2, 3}, {4, 5, 6}};
         // int secondMatrix[][] = {{7, 8, 9}, {10, 11, 12}};
         // int sumMatrix[][] = new int[2][3];
-
         // for(int i=0; i<firstMatrix.length; i++){// row no of times
         //     for(int j=0; j<firstMatrix[i].length; j++){// column no of times
         //         sumMatrix[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
@@ -44,13 +42,11 @@ public class Arrays {
         //     }
         //     System.out.println();
         // }
-
         // Question_4-> Write a program to reverse an array 
         // int arr[] = {0,1,2,3,4,5,6,7,8};
         // int n = arr.length;
         // int l = Math.floorDiv(n, 2);// -> This is same as GIF function in math
         // int temp;
-
         // for(int i=0; i<l; i++){
         //     // |1| |2| | |
         //     // swap arr[i] and arr[n-1-i]
@@ -61,7 +57,6 @@ public class Arrays {
         // for(int element:arr){
         //     System.out.print(element + " ");
         // }
-
         // Question_5-> Write a program to find out maximum element in an array
         // int arr[] = {10, 20, 30, 40, 50};
         // int max = arr[0];
@@ -71,7 +66,6 @@ public class Arrays {
         //     }
         // }
         // System.out.println("Maximum element in array is: " + max);
-
         // Question_6-> Write a program to check whether the array is sorted or not
         // boolean isSorted = false;
         // int arr[] = {70, 20, 30, 40, 50};
@@ -86,7 +80,6 @@ public class Arrays {
         // } else {
         //     System.out.println("Array is sorted");
         // }
-
         // Question_7-> Write a program to find out the max and min elements and return in an array that stores only the max and min elements
         // int arr[] = {10, 20, 30, 40, 50};
         // int min = arr[0];
@@ -103,7 +96,6 @@ public class Arrays {
         // for(int element: result){
         //     System.out.print(element + " ");
         // }
-
         // Question_8-> Write a program to 
     }
 }

@@ -1,13 +1,12 @@
-package com.DSA;
-
 /*
 => Time Complexity :-
 -> Best Case_0(nlogn)
 -> Worst Case_0(n^2)
 -> Avg Case_0(nlogn)
 => Worst Case occurs when pivot is always smallest or largest element.
-*/
+ */
 public class Quick_Sort {
+
     private static int partition(int arr[], int low, int high) {
         int pivot = arr[high];
         int i = low - 1;
@@ -38,7 +37,8 @@ public class Quick_Sort {
         int arr[] = {6, 1, 9, 5, 3, 8};
         int size = arr.length;
         quickSort(arr, 0, size - 1);
-        for (int element : arr)
+        for (int element : arr) {
             System.out.print(element + " ");
+        }
     }
 }

@@ -1,4 +1,3 @@
-package com.DSA;
 
 class MyLinked_List {
 
@@ -118,8 +117,9 @@ class MyLinked_List {
     }
 
     public void reverseIterative() {
-        if(head == null || head.next == null)
-            return;        
+        if (head == null || head.next == null) {
+            return;
+        }
         Node prevNode = head;
         Node currNode = head.next;
         while (currNode != null) {

@@ -1,5 +1,3 @@
-package com.DSA;
-
 import java.util.Stack;
 
 public class nextGreaterElement {

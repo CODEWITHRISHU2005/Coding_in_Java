@@ -1,6 +1,6 @@
-package com.DSA;
 
 public class Insertion_Sort {
+
     public static void main(String args[]) {
         //Time Complexity:0(n^2)
         int arr[] = {7, 8, 1, 3, 2};
@@ -15,7 +15,8 @@ public class Insertion_Sort {
             }
             arr[j + 1] = current;
         }
-        for (int element : arr)
+        for (int element : arr) {
             System.out.print(element + " ");
+        }
     }
 }

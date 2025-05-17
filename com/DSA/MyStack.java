@@ -1,6 +1,6 @@
-package com.DSA;
 
 public class MyStack {
+
     protected int arr[];
     protected int top;
     public static final int DEFAULT_CAPACITY = 5;
@@ -63,6 +63,7 @@ public class MyStack {
 }
 
 class DynamicStack extends MyStack {
+
     //Array_List or Linked_List
     public DynamicStack() throws Exception {
         this(DEFAULT_CAPACITY);

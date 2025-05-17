@@ -1,13 +1,14 @@
-package com.DSA;
 
 public class Selection_Sort {
+
     public static void main(String[] args) {
         //Time Complexity_0(n^2)
         int arr[] = {7, 8, 1, 3, 2};
         int size = arr.length;
         System.out.println("Before Sorting...");
-        for (int element : arr)
+        for (int element : arr) {
             System.out.print(element + " ");
+        }
         System.out.println();
 
         //Selection_Sort:
@@ -23,12 +24,14 @@ public class Selection_Sort {
             arr[smallest] = arr[i];
             arr[i] = temp;
 
-            for (int element : arr)
+            for (int element : arr) {
                 System.out.print(element + " ");
+            }
             System.out.println();
         }
         System.out.println("After Sorting...");
-        for (int element : arr)
+        for (int element : arr) {
             System.out.print(element + " ");
+        }
     }
 }

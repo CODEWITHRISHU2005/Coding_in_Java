@@ -1,12 +1,11 @@
-package com.DSA;
-
 /*
 => Time Complexity :-
 -> Best Case_0(nlogn)
 -> Worst Case_0(nlogn)
 -> Avg Case_0(nlogn)
-*/
+ */
 public class Merge_Sort {
+
     public static void conquer(int arr[], int si, int mid, int ei) {
         int merged[] = new int[ei - si + 1];
         int idx1 = si;
@@ -44,7 +43,8 @@ public class Merge_Sort {
         int arr[] = {6, 3, 9, 5, 2, 8};
         int size = arr.length;
         divide(arr, 0, size - 1);
-        for (int el : arr)
+        for (int el : arr) {
             System.out.print(el + " ");
+        }
     }
 }
