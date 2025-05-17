@@ -7,9 +7,10 @@ import java.util.Map;
  * interface. It is used to store key-value pairs, where each key is unique and
  * maps to a specific value. HashMap allows null values and one null key. It is
  * not synchronized, meaning it is not thread-safe.
- *
  * HashMap is a good choice when you need to store a large number of key-value
  * pairs and do not care about the order of the elements.
+ * HashMap uses keys in the same way as an Array uses an index.
+ * HashMap allows for efficient key-based retrieval, insertion, and removal with an average O(1) time complexity.
  */
 public class HashMaps {
 
