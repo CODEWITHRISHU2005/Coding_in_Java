@@ -4,6 +4,23 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinaryTrees {
+    /*
+     * A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.
+     * The topmost node is called the root, and each node can have its own left and right subtrees.
+     * The binary tree can be used to represent hierarchical data, and it supports various operations such as insertion, deletion, traversal, and searching.
+     * => Common types of binary trees include:-
+     * 1. Full Binary Tree: Every node has either 0 or 2 children.
+     * 2. Complete Binary Tree: All levels are completely filled except possibly the last level, which is filled from left to right.
+     * 3. Perfect Binary Tree: All internal nodes have two children, and all leaves are at the same level.
+     * 4. Balanced Binary Tree: The height of the left and right subtrees of any node differ by at most one.
+     * 5. Binary Search Tree (BST): A binary tree where the left subtree contains only nodes with keys less than the node's key, and the right subtree contains only nodes with keys greater than the node's key.
+     * 6. AVL Tree: A self-balancing binary search tree where the difference in heights between the left and right subtrees is at most one.
+     * 7. Red-Black Tree: A self-balancing binary search tree with an additional property that ensures the tree remains balanced during insertions and deletions.
+     * 8. Segment Tree: A binary tree used for storing intervals or segments, allowing efficient range queries and updates.
+     * 9. Fenwick Tree (Binary Indexed Tree): A data structure that provides efficient methods for cumulative frequency tables, allowing updates and queries in logarithmic time.
+     * 10. Huffman Tree: A binary tree used for data compression, where each leaf node represents a character and its frequency in the input data.
+     * 10. Trie (Prefix Tree): A tree-like data structure used for storing a dynamic set of strings, where each node represents a character of a string.
+     */
 
     static class Node {
 
