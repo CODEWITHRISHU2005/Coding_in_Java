@@ -1,5 +1,7 @@
 // Finally Block is used to close the resource using Buffered Reader.
-// Finally Block mai jo code likha hoga wo har hal mai execute hokar managa exception aye chaha nhi.
+// Finally Block mai jo code likha hoga wo har hal mai execute hokar managa exception aye chaha nh aaye.
+// Finally Block is not getting executed in case of System.exit() or or Runtime. JVM crash or infinite loop or power failure.
+
 public class FinallyBlock {
     public static int greet() {
         try {

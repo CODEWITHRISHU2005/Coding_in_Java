@@ -4,7 +4,8 @@
 -> We cannot override a private method & return type should same for overriden method.
 -> Overloading is about the same method having different signatures.Overriding is about the same method, and same signature but different classes connected through inheritance. 
 -> Method overloading is compile time polymorphism whereas method overriding is runtime polymorphism.
--> In dynamic method dispatch we can run only reference of obj method.
+-> In dynamic method dispatch if non staic method is called then it will run the method of the object which is created at run time.
+-> & if static method is called then it will run the method of the class which is used to create the object at compile time.
 */
 class Phone {
 

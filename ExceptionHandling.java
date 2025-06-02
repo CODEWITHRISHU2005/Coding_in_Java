@@ -2,10 +2,13 @@
 => TYPES OF ERRORS :
 -> SYNTAX ERROR OR COMPILE TIME ERROR.
 -> LOGICAL ERROR OR BUG.
--> RUNTIME ERROR OR EXCEPTION.
--> There are two types of Exception :
-* Checked Exception or compile time exception Handled by compiler.
-* Unchecked Exception or Runtime Exception.
+-> EXCEPTION OR RUNTIME ERROR.
+
+-> There are two types of Exception:-
+ * Checked Exception or compile time exception Handled by compiler must be handled by programmer.Base Class is Exception.
+ * Example: IOException, SQLException, ClassNotFoundException, etc.
+ * Unchecked Exception or Runtime Exception. Handled by JVM. Base Class is RuntimeException or Error. optional to handle by programmer.
+ * Example: ArithmeticException, ArrayIndexOutOfBoundsException, NullPointerException, etc.
 */
 
 import java.util.Scanner;
