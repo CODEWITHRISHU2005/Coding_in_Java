@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinaryTrees {
+
     /*
      * A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.
      * The topmost node is called the root, and each node can have its own left and right subtrees.
@@ -234,7 +235,7 @@ public class BinaryTrees {
         }
 
         public int sumTree(Node root) {
-            if(root == null) {
+            if (root == null) {
                 return 0;
             }
 
@@ -275,9 +276,8 @@ public class BinaryTrees {
         System.out.println("Diameter of tree (Optimized): " + BinaryTree.diameterOptimized(root).first);
         System.out.println("Kth Level Traversal: ");
         BinaryTree tree = new BinaryTree();
-        tree.kthLevelTraversal(root, 2);            
+        tree.kthLevelTraversal(root, 2);
         System.out.println();
-
 
         System.out.println("Top View of the tree: ");
         tree.topView(root);
