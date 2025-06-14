@@ -1,14 +1,11 @@
 
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
-import javax.management.ConstructorParameters;
 
 public class Stream_API {
 
@@ -61,12 +58,12 @@ public class Stream_API {
                 ));
 
         nums.stream()
-            .takeWhile(num -> num < 5)
-            .forEach(System.out::println);
+                .takeWhile(num -> num < 5)
+                .forEach(System.out::println);
 
         nums.stream()
-            .dropWhile(num -> num > 5)
-            .forEach(System.out::println);
+                .dropWhile(num -> num > 5)
+                .forEach(System.out::println);
 
         Stream<Integer> stream1 = Stream.of(1, 2, 3);
         Stream<Integer> stream2 = Stream.of(4, 5, 6);
@@ -89,5 +86,10 @@ public class Stream_API {
                         Collectors.averagingDouble(Employee::getSalary) // Downstream aggregation
                 ));
         System.out.println(nameMap);
+
+        String numString = nums.stream()
+                .collect(Collectors.joining(", ", "[", "]"));
+        System.out.println(numString); // Results in a string like "[4, 5, 7, 3, 2, 6]"
+
     }
 }
