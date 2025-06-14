@@ -1,8 +1,10 @@
 
 import java.util.Arrays;
+import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -49,14 +51,6 @@ public class Stream_API {
                 .collect(Collectors.toList());
         System.out.println(phones);
 
-        Long employeeResult = empoloyee.stream()
-                .mapToDouble(Employee::getSalary)
-                .boxed()
-                .collect(Collectors.collectingAndThen(
-                        Double::doubleValue,
-                        Math::round
-                ));
-
         nums.stream()
                 .takeWhile(num -> num < 5)
                 .forEach(System.out::println);
@@ -89,7 +83,24 @@ public class Stream_API {
 
         String numString = nums.stream()
                 .collect(Collectors.joining(", ", "[", "]"));
-        System.out.println(numString); // Results in a string like "[4, 5, 7, 3, 2, 6]"
+        System.out.println(numString); // Output: "[4, 5, 7, 3, 2, 6]"
+
+        IntSummaryStatistics stats = nums.stream()
+                .collect(Collectors.summarizingInt(Integer::intValue));
+        System.out.println(stats); // Output: IntSummaryStatistics{count = 6, sum = , min = 2, avg = , max = 7}
+
+        Long employeeResult = empoloyee.stream()
+                .mapToDouble(Employee::getSalary)
+                .boxed()
+                .collect(Collectors.collectingAndThen(
+                        Double::doubleValue,
+                        Math::round
+                ));
+        System.out.println(employeeResult);
+
+        Map<Integer, Integer> map = nums.stream()
+                .collect(Collectors.toMap(Function.identity(), value -> value * 2));
+        System.out.println(map); // Output: [4->8, 5->10, 7->14, 3->6, 2->4, 6->12]
 
     }
 }
