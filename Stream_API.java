@@ -1,10 +1,14 @@
 
+import java.lang.module.FindException;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.IntSummaryStatistics;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -17,7 +21,6 @@ public class Stream_API {
                 .filter(n -> n % 2 == 0)
                 .map(n -> n * 2)
                 .reduce(0, (c, e) -> c + e);
-        System.out.println(ans);
 
         Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]})
                 .limit(10).map(t -> t[0])
@@ -37,19 +40,16 @@ public class Stream_API {
                         Collectors.averagingDouble(Order::getTotal), // Second Collector
                         (sum, avg) -> Map.of("total", sum, "average", avg) // Merge Logic   
                 ));
-        System.out.println(result);
 
         // @OneToOneMapping
         List<String> emails = customer.stream()
                 .map(customer -> customer.getEmail())
                 .collect(Collectors.toList());
-        System.out.println(emails);
 
         // @OneToManyMapping
         List<String> phones = customer.stream()
                 .flatMap(customer -> customer.getPhoneNumbers().stream())
                 .collect(Collectors.toList());
-        System.out.println(phones);
 
         nums.stream()
                 .takeWhile(num -> num < 5)
@@ -72,22 +72,20 @@ public class Stream_API {
                         Employee::getDept, // Grouping Key
                         Collectors.mapping(Employee::getName, // Extract Value
                                 Collectors.toList())));                         // Collect into List
-        System.out.println(deptToNames);
 
         Map<Boolean, List<String>> nameMap = Employee.stream()
                 .collect(Collectors.partitioningBy(
                         e -> e.getSalary() > 100000, // Predicate
                         Collectors.averagingDouble(Employee::getSalary) // Downstream aggregation
                 ));
-        System.out.println(nameMap);
 
         String numString = nums.stream()
                 .collect(Collectors.joining(", ", "[", "]"));
-        System.out.println(numString); // Output: "[4, 5, 7, 3, 2, 6]"
+        // Output: "[4, 5, 7, 3, 2, 6]"
 
         IntSummaryStatistics stats = nums.stream()
                 .collect(Collectors.summarizingInt(Integer::intValue));
-        System.out.println(stats); // Output: IntSummaryStatistics{count = 6, sum = , min = 2, avg = , max = 7}
+        // Output: IntSummaryStatistics{count = 6, sum = , min = 2, avg = , max = 7}
 
         Long employeeResult = empoloyee.stream()
                 .mapToDouble(Employee::getSalary)
@@ -96,11 +94,34 @@ public class Stream_API {
                         Double::doubleValue,
                         Math::round
                 ));
-        System.out.println(employeeResult);
 
         Map<Integer, Integer> map = nums.stream()
                 .collect(Collectors.toMap(Function.identity(), value -> value * 2));
-        System.out.println(map); // Output: [4->8, 5->10, 7->14, 3->6, 2->4, 6->12]
+        // Output: [4->8, 5->10, 7->14, 3->6, 2->4, 6->12]
 
+        List<String> name = Collections.nCopies(5, "Rishu");
+
+        System.out.println(Collections.frequency(nums, 4));
+
+        // Important for Map element -> freq
+        Map<Integer, Integer> m = nums.stream()
+                .collect(Collectors.toMap(
+                        Function.identity(),
+                        number -> Collections.frequency(nums, number)
+                ));
+        
+        // Important for Map element -> freq
+        Map<Integer, Long> map1 = nums.stream()
+                .collect(Collectors.groupingBy(
+                        Function.identity(),
+                        Collectors.counting()
+                ));
+
+        boolean isdisjoint = Collections.disjoint(List.of(1, 2, 3, 4, 5), List.of(2, 3, 7, 8)); // false
+
+        Set<String> set = Collections.singleton("Rishu");
+
+        Collections.rotate(nums, 3); // [3, 2, 6, 4, 5, 7); rotate from right from pos 3
+        Collections.rotate(nums, -3); // rotate from left from pos 3
     }
 }
