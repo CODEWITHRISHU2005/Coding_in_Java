@@ -5,6 +5,8 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
+import database.EmployeeDatabase;
+
 public class EmployeeReminderService {
 
     public CompletableFuture<Void> sendReminderToEmployee() {
