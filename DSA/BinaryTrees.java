@@ -1,7 +1,9 @@
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.stream.IntStream;
 
 public class BinaryTrees {
 
@@ -22,7 +24,6 @@ public class BinaryTrees {
      * 10. Huffman Tree: A binary tree used for data compression, where each leaf node represents a character and its frequency in the input data.
      * 10. Trie (Prefix Tree): A tree-like data structure used for storing a dynamic set of strings, where each node represents a character of a string.
      */
-
     static class Node {
 
         int data;
@@ -184,21 +185,6 @@ public class BinaryTrees {
             return new Pair<>(finalDiameter, myHeight);
         }
 
-        public void kthLevelTraversal(Node root, int k) { // 0(n)
-            // Traverses the tree and prints all nodes at the kth level
-            if (root == null) {
-                return;
-            }
-
-            if (k == 0) {
-                System.out.print(root.data + " ");
-                return;
-            }
-
-            kthLevelTraversal(root.left, k - 1);
-            kthLevelTraversal(root.right, k - 1);
-        }
-
         public void topView(Node root) {
             Queue<Pair<Node, Integer>> queue = new LinkedList<>(); // Pair of Node and its HD from root
             HashMap<Integer, Integer> map = new HashMap<>(); // To store HD & node.data
@@ -222,16 +208,24 @@ public class BinaryTrees {
                 }
             }
 
-            for (int i = map.keySet()
-                    .stream()
-                    .min(Integer::compareTo)
-                    .orElse(0);
-                    i <= map.keySet()
-                            .stream()
-                            .max(Integer::compareTo)
-                            .orElse(0); i++) {
-                System.out.print(map.get(i) + " ");
+            int min = Collections.min(map.keySet());
+            int max = Collections.max(map.keySet());
+            IntStream.rangeClosed(min, max).forEach(i -> System.out.print(map.get(i) + " "));
+        }
+
+        public void kthLevelTraversal(Node root, int k) { // 0(n)
+            // Traverses the tree and prints all nodes at the kth level
+            if (root == null) {
+                return;
             }
+
+            if (k == 0) {
+                System.out.print(root.data + " ");
+                return;
+            }
+
+            kthLevelTraversal(root.left, k - 1);
+            kthLevelTraversal(root.right, k - 1);
         }
 
         public int sumTree(Node root) {
